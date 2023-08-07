@@ -35,7 +35,7 @@ export default function Sidebar() {
     }
   }, []);
 
-  const activeMenu = (e) => {
+  const activeMenu = (e: any) => {
     var navLink = document.getElementsByClassName("nav-item");
     for (var i = 0; i < navLink.length; i++) {
       navLink[i].classList.remove("active");
@@ -79,7 +79,7 @@ export default function Sidebar() {
                   <h2 className="accordion-header" id="headingOne">
                     <li
                       className="nav-item"
-                      type="button"
+                      // type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
                       // aria-expanded="true"
